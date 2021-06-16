@@ -5,8 +5,9 @@ lexus = {
    'Engine': '3.5 L V6'
 }
 
+
 # print value with a key 'Model' from lexus dictionary
-print(lexus['Model'])
+print(lexus['Year'])
 
 # adding key-value pair to the dictionary
 lexus['Doors'] = 4
