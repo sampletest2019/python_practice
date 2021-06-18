@@ -1,5 +1,5 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
 expected_title = "Electronics, Cars, Fashion, Collectibles & More | eBay"
@@ -11,4 +11,5 @@ assert browser.title == expected_title
 
 browser.find_element_by_id("gh-ac").send_keys("Dodge")
 
-browser.find_element_by_xpath("//li[3]/a[@role='option']").click()
+dropdown_option = WebDriverWait(browser, 5).until(lambda x: x.find_element_by_xpath("//li[3]/a[@role='option']"))
+dropdown_option.click()
