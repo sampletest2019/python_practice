@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.support.select import Select
 from webdriver_manager.chrome import ChromeDriverManager
 
+
 # create variables for home pro home page url, confirmation page url and home page title
 base_url = "https://homepro.herokuapp.com/index.php"
 confirmation_page = "https://homepro.herokuapp.com/orderconfirm.php"
