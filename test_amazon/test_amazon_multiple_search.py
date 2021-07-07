@@ -2,7 +2,7 @@ import pytest
 from selenium.webdriver.common.keys import Keys
 
 
-@pytest.mark.parametrize("name", [
+@pytest.mark.parametrize("item", [
     "macbook pro",
     "microsoft surface",
     "razer gaming laptop"
